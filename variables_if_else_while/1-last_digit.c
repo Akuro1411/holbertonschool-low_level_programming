@@ -4,8 +4,9 @@
 /* more headers goes there */
 
 /**
- *main - for looping and success
- *return 0 - for no error
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
  */
 
 /* betty style doc for function main goes there */
