@@ -1,0 +1,1 @@
+This is second task for c which contains if and else information.
