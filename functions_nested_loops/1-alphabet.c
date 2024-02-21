@@ -7,10 +7,10 @@ void print_alphabet(void);
  * Return: Always 0.
  */
 
-int main(void);
+int main(void)
 {
 print_alphabet();
-_putchar('\n')
+_putchar('\n');
 return (0);
 }
 void print_alphabet(void)
@@ -18,6 +18,6 @@ void print_alphabet(void)
 char letter;
 for (letter = 'a'; letter <= 'z'; letter++)
 {
-_putchar(letter)
+_putchar(letter);
 }
 }
