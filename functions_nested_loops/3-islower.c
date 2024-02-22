@@ -1,5 +1,5 @@
 #include "main.h"
-
+void exit(int status);
 /**
  * print_alphabet - prints alphabet
  *
@@ -14,7 +14,6 @@ int _islower(int c)
     {
       if (a == i)
 	{
-	  int X = 1;
 	  exit(1);
 	}
       else
