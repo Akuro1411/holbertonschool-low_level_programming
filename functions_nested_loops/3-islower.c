@@ -8,8 +8,7 @@
 
 int _islower(int c)
 {
-  char a[]="abcdefghijklmnopqrstuvwxyz";
-  char c;
+  char a = c + '0';
   char i;
   for (i = 'a'; i < 'z'; i++)
     {
@@ -23,4 +22,4 @@ int _islower(int c)
 	  return (0);
 	}
     }
-
+}
