@@ -12,7 +12,7 @@ int _islower(int c)
   char i;
   for (i = 'a'; i < 'z'; i++)
     {
-      if (c == i)
+      if (a == i)
 	{
 	  return (1);
 	  break;
@@ -22,4 +22,5 @@ int _islower(int c)
 	  return (0);
 	}
     }
+  return (0);
 }
