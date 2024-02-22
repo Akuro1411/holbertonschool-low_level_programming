@@ -15,8 +15,7 @@ int _islower(int c)
       if (a == i)
 	{
 	  int X = 1;
-	  return X;
-	  break;
+	  exit(1);
 	}
       else
 	{
