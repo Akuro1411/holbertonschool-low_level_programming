@@ -7,28 +7,11 @@
 
 int _isalpha(int c)
 {
-  char a, j;
-  int n = 0;
-  for (a = 'a'; a < 'z'; a++)
-    {
-      if (c == a)
-	{
-	  n++;
-	}
-    }
-  for (j = 'a'; j < 'z'; j++)
-    {
-      if (c == j)
-	{
-	  n++;
-	}
-    }
-  if (n == 1)
-    {
-      return 1;
-    }
-  else
-    {
-      return 0;
-    }
+  char j;
+  if ((j >= 'a' && j <= 'z') || (j >= 'A' && j <= 'Z')){
+    return (1);
+  }
+  else{
+    return (0);
+  }
 }
