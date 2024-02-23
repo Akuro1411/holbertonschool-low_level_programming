@@ -7,28 +7,28 @@
 
 int _isalpha(int c)
 {
-char i, j;
-int n = 0;
-for (i = 'a'; i < 'z'; i++)
-{
-for (j = 'A'; j < 'Z'; j++)
-{
-if (c == i)
-{
-n++;
-}
-else if (c == j)
-{
-n++;
-}
-}
-}
-if (n == 1)
-{
-return (1);
-}
-else
-{
-return (0);
-}
+  char a, j;
+  int n = 0;
+  for (a = 'a'; a < 'z'; a++)
+    {
+      if (c == a)
+	{
+	  n++
+	}
+    }
+  for (j = 'a'; j < 'z'; j++)
+    {
+      if (c == j)
+	{
+	  n++
+	}
+    }
+  if (n == 1)
+    {
+      return 1;
+    }
+  else
+    {
+      return 0;
+    }
 }
