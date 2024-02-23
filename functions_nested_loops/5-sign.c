@@ -3,7 +3,7 @@
 /**
  * print_sign - prints alphabet
  * @n: - input of function
- * Return - success of code
+ * Return: Always 0 (Success)
  */
 
 int print_sign(int n)
@@ -21,6 +21,6 @@ return (0);
 else
 {
 _putchar('-');
-return( -1 );
+return (-1);
 }
 }
