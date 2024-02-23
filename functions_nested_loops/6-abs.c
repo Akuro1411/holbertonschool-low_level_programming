@@ -2,11 +2,11 @@
 
 /**
  * print_sign - prints alphabet
- * @n: - input of function
+ * @a: - input of function
  * Return: Always 0 (Success)
  */
 
-int _abs(int)
+int _abs(int a)
 {
   if (a > 0 || a == 0)
     {
@@ -17,4 +17,5 @@ int _abs(int)
       t = a * -1;
 	_putchar(t);
     }
+  return (0);
 }
