@@ -13,14 +13,14 @@ int _isalpha(int c)
     {
       if (c == a)
 	{
-	  n++
+	  n++;
 	}
     }
   for (j = 'a'; j < 'z'; j++)
     {
       if (c == j)
 	{
-	  n++
+	  n++;
 	}
     }
   if (n == 1)
