@@ -1,37 +1,25 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * print_to_98 - check the code
- * @number: - input of function
+ *print_to_98 - prints natural
+ *numbers from n to 98
+ *@n:integer to start by
+ *return: returns nothing
  */
-void print_to_98(int number)
+void print_to_98(int n)
 {
-  if (number <= 98)
+  if (n >= 98)
     {
-      while (number <= 98)
-	{
-	  if (number == 98)
-	    {
-	      printf("%d", number);
-	      _putchar(' ');
-	      break;
-	    }
-	  printf("%d", number);
-	  number++;
-	  _putchar(',');
-	  _putchar(' ');
-	}
+      while (n > 98)
+	printf("%d, ", n--);
 
+      printf("%d\n", n);
     }
   else
     {
-      while (number >= 98)
-	{
-	  printf("%d", number);
-	  _putchar(',');
-	  _putchar(' ');
-	  number--;
-	}
+      while (n < 98)
+	printf("%d, ", n++);
 
+      printf("%d\n", n);
     }
 }
