@@ -13,7 +13,7 @@ void times_table(void)
     {
       for (minute = 0; minute <=59; minute++)
 	{
-	  if (hour < 10) && (minute < 10)
+	  if ((hour < 10) && (minute < 10))
 	    {
 	      _putchar('0');
 	      _putchar(hour + '0');
@@ -22,7 +22,7 @@ void times_table(void)
 	      _putchar(minute + '0');
 	      _putchar('\n');
 	    }
-	  else if (hour < 10) && (minute >= 10 )
+	  else if ((hour < 10) && (minute >= 10 ))
 	    {
 	      _putchar('0');
 	      _putchar(hour + '0');
@@ -30,7 +30,7 @@ void times_table(void)
 	      _putchar(minute + '0');
 	      _putchar('\n');
 	    }
-	  else if (hour >= 10) && (minute <  10)
+	  else if ((hour >= 10) && (minute <  10))
 	    {
 	      _putchar(hour + '0');
 	      _putchar(':');
