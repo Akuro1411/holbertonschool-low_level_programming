@@ -13,7 +13,7 @@ void print_to_98(int number)
 	  printf("%d", number);
 	  number++;
 	  _putchar(',');
-	  _putchar(' ')
+	  _putchar(' ');
 	}
 
     }
@@ -22,8 +22,8 @@ void print_to_98(int number)
       while (number >= 98)
 	{
 	  printf("%d", number);
-	  _putchar(',')
-	  _putchar(' ')
+	  _putchar(',');
+	  _putchar(' ');
 	  number--;
 	}
 
