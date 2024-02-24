@@ -33,7 +33,8 @@ void jack_bauer(void)
 	    }
 	  else if ((hour >= 10) && (minute <  10))
 	    {
-	      _putchar(hour + '0');
+	      _putchar((hour / 10) + '0');
+	      _putchar((hour % 10) + '0');
 	      _putchar(':');
 	      _putchar('0');
 	      _putchar(minute + '0');
@@ -41,9 +42,11 @@ void jack_bauer(void)
 	    }
 	  else
 	    {
-	      _putchar(hour + '0');
+	      _putchar((hour / 10) + '0');
+	      _putchar((hour % 10) + '0');
 	      _putchar(':');
-	      _putchar(minute + '0');
+	      _putchar((minute / 10) + '0');
+	      _putchar((minute % 10) + '0');
 	      _putchar('\n');
 	    }
 	}
