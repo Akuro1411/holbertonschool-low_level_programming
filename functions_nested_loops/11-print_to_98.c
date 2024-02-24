@@ -12,7 +12,7 @@ void print_to_98(int number)
 	{
 	  printf("%d", number);
 	  number++;
-	  printf("%c",44, " ");
+	  _putchar(",", " ");
 	}
 
     }
@@ -21,7 +21,7 @@ void print_to_98(int number)
       while (number >= 98)
 	{
 	  printf("%d", number);
-	  printf("%c",44, " ");
+	  _putchar(",", " ")
 	  number--;
 	}
 
