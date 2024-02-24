@@ -18,13 +18,13 @@ void print_to_98(int number)
     }
   else if (number == 98)
     {
-      _putchar(t + '0');
+      _putchar(number + '0');
     }
   else
     {
-      for (t; number < t; t--)
+      for (nummber; number > 98; number--)
 	{
-	  _putchar(t + '0');
+	  _putchar(number + '0');
 	}
     }
 }
