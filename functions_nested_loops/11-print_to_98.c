@@ -18,7 +18,7 @@ while (number < 98)
 	{
 	_putchar(number + '0');
 	}
-	number
+	number++;
 	}
 }
 else if (number == 98)
@@ -33,4 +33,5 @@ for (number - 98; number >= 98; number--)
 	_putchar((number / 10) + '0');
 	_putchar((number % 10) + '0');
 	}
+}
 }
