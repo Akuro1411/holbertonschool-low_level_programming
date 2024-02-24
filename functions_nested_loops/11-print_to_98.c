@@ -22,7 +22,7 @@ void print_to_98(int number)
     {
       while (number > 98)
 	{
-	  printf("%d, ", number)
+	  printf("%d, ", number);
 	  number--;
 	}
       printf("%d\n", number);
