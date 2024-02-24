@@ -5,7 +5,6 @@
  */
 void print_to_98(int number)
 {
-int t;
 if (number < 98)
 {
 while (number < 98)
@@ -19,7 +18,7 @@ while (number < 98)
 	{
 	_putchar(number + '0');
 	}
-	number++
+	number
 	}
 }
 else if (number == 98)
@@ -29,7 +28,7 @@ _putchar((number % 10) + '0');
 }
 else
 {
-for (t = number - 98; number >= 98; number--)
+for (number - 98; number >= 98; number--)
 	{
 	_putchar((number / 10) + '0');
 	_putchar((number % 10) + '0');
