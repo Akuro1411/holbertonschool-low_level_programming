@@ -1,39 +1,29 @@
 #include "main.h"
+#include <stdio.h>
 /**
  * print_to_98 - check the code
  * @number: - input of function
  */
 void print_to_98(int number)
 {
-if (number < 98)
-{
-while (number <= 98)
-{
-	if (number > 10)
+  if (number <= 98)
+    {
+      while (number <= 98)
 	{
-	_putchar((number / 10) + '0');
-	_putchar((number % 10) + '0');
+	  printf("%d", number);
+	  number++;
+	  printf("%c",44, " ");
 	}
-	else
+
+    }
+  else
+    {
+      while (number >= 98)
 	{
-	_putchar(number + '0');
+	  printf("%d", number);
+	  printf("%c",44, " ");
+	  number--;
 	}
-	number++;
-	}
-}
-else if (number == 98)
-{
-_putchar((number / 10) + '0');
-_putchar((number % 10) + '0');
-}
-else
-{
-while (number >= 98)
-	{
-	_putchar((number / 10) + '0');
-	_putchar((number % 10) + '0');
-	number--;
-	}
-          
-}
+
+    }
 }
