@@ -13,7 +13,7 @@ void print_to_98(int number)
 	  if (number == 98)
 	    {
 	      printf("%d", number);
-	      _putchar('\n');
+	      _putchar(' ');
 	      break;
 	    }
 	  printf("%d", number);
