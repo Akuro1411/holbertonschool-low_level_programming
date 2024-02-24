@@ -21,7 +21,7 @@ void times_table(void)
 	      _putchar(t + '0');
 	      t = t + number;
 	    }
-	  _putchar('\n')
-	  number++
+	  _putchar('\n');
+	  number++;
 	}
 }
