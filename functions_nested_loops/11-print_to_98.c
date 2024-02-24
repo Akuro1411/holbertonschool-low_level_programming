@@ -22,7 +22,7 @@ void print_to_98(int number)
     }
   else
     {
-      for (nummber; number > 98; number--)
+      for (number; number > 98; number--)
 	{
 	  _putchar(number + '0');
 	}
