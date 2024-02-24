@@ -11,7 +11,7 @@ void print_to_98(int number)
   int t;
   if (number < 98)
     {
-      for (t = 0; t < number; t++)
+      for (t = 0; t <= number; t++)
 	{
 	  _putchar(t + '0');
 	}
@@ -22,7 +22,7 @@ void print_to_98(int number)
     }
   else
     {
-      for (number; number > 98; number--)
+      for (t = number - 98; number >= 98; number--)
 	{
 	  _putchar(number + '0');
 	}
