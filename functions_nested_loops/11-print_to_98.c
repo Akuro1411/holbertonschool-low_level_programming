@@ -7,7 +7,7 @@ void print_to_98(int number)
 {
 if (number < 98)
 {
-while (number < 98)
+while (number <= 98)
 {
 	if (number > 10)
 	{
@@ -28,10 +28,12 @@ _putchar((number % 10) + '0');
 }
 else
 {
-for (number - 98; number >= 98; number--)
+while (number >= 98)
 	{
 	_putchar((number / 10) + '0');
 	_putchar((number % 10) + '0');
+	number--
 	}
+          
 }
 }
