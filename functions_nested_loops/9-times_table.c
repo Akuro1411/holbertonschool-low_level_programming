@@ -8,7 +8,7 @@
 
 void times_table(void)
 {
-  int n_of_loop, number, t;
+  int n_of_loop, number, t, n;
   for (n_of_loop = 0; n_of_loop <= 9; n_of_loop++)
     {
       number = 0;
@@ -24,6 +24,6 @@ void times_table(void)
 	      t = t + number;
 	    }
 	}
-      number++
+      number++;
     }
 }
