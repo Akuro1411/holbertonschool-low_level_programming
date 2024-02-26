@@ -16,7 +16,7 @@ else
 {
 for (t = size; t > 0; t--)
 {
-for (j = 0; j < t; j++)
+for (j = 1; j < t; j++)
 {
 _putchar(' ');
 }
