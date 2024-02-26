@@ -16,7 +16,7 @@ else
 {
 for (t = 1; t <= n; t++)
 {
-  for (j = 0; j < t; j++)
+  for (j = 1; j < t; j++)
     {
       _putchar(' ');
     }
