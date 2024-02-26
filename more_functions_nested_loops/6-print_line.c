@@ -1,22 +1,21 @@
 #include "main.h"
 
 /**
- * print_line - prints _ for given number's loop
- * @n: - input of function
+ * more_numbers - prints number 0 to 14 10 times
  */
 
-void print_line(int n)
+void more_numbers(void)
 {
-int t;
-if (n <= 0)
+int n, t;
+for (t = 0; t < 10; t++)
 {
-_putchar('\n');
+for (n = 0; n <= 14; n++)
+{
+if (n >= 10)
+{
+_putchar((n / 10) + '0');
 }
-else
-{
-for (t = 0; t < n; t++)
-{
-_putchar('_');
+_putchar((n % 10) + '0');
 }
 _putchar('\n');
 }
