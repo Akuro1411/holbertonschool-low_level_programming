@@ -16,11 +16,11 @@ else
 {
 for (t = size; t > 0; t--)
 {
+_putchar(' ');
 for (j = 0; j < t; j++)
 {
 _putchar('#');
 }
-_putchar(' ');
 _putchar('\n');
 }
 }
