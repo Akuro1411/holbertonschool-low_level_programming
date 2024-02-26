@@ -20,10 +20,10 @@ for (t = 0; t < n; t++)
     {
       _putchar(' ');
     }
-  if (t == (n-1))
-    {
-      _putchar('\\');
-    }
+    if (j == (t-1))
+      {
+        _putchar('\\');
+      }
 }
 _putchar('\n');
 }
