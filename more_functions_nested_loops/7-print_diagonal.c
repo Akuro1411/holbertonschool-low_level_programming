@@ -23,6 +23,5 @@ for (t = 1; t <= n; t++)
    _putchar('\\');
    _putchar('\n');
 }
-_putchar('\n');
 }
 }
