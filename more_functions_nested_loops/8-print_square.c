@@ -20,8 +20,8 @@ for (j = 0; j < t; j++)
 {
 _putchar('#');
 }
-_putchar('\n')
-_putchar('#')
+_putchar('\n');
+_putchar('#');
 }
 }
 }
