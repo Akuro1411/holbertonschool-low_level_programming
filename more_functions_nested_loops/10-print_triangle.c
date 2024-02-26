@@ -14,13 +14,13 @@ _putchar('\n');
 }
 else
 {
-for (t = size; t > 0; t--)
+for (t = 0; t < size; t)
 {
-for (j = 1; j < t; j++)
+for (j = 1; j < size; j++)
 {
 _putchar(' ');
 }
-for (z = 1; z < t; z++)
+for (z = t; z < t; z++)
 {
 _putchar('#');
 }
