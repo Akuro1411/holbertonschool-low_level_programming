@@ -5,7 +5,7 @@
  * @size: - input of function
  */
 
-void print_square(int size);
+void print_square(int size)
 {
 int t, j;
 if (size <= 0)
