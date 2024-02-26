@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
- *more_numbers - prints numbers 0 to 9 except 2 and 4
+ *print_more_numbers - prints numbers 0 to 9 except 2 and 4
  *
  */
-void more_numbers(void)
+void print_most_numbers(void);
 {
 int n;
 for (n = 0; n <= 9; n++)
