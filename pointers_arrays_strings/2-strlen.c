@@ -11,7 +11,7 @@ int i;
 i = 0;
 while (*s)
 {
-*s++;
+s++;
 i++;
 }
 return (i);
