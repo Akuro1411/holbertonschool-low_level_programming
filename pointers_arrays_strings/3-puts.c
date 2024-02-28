@@ -1,19 +1,17 @@
 #include "main.h"
 /**
  * _puts - check the code
- * @s: - input of function
+ * @str: - input of function
  * Return: Always 0 (Success)
  */
 
 void _puts(char *str)
 {
-int i;
-i = 0;
-while (*s)
+while (*str)
 {
-_putchar(s)
-s++;
+_putchar(str);
+str++;
 }
-_putchar('\n')
+_putchar('\n');
 }
 
