@@ -1,18 +1,18 @@
 #include "main.h"
 /**
- * _puts - check the code
+ * _strlen - check the code
  * @s: - input of function
  * Return: Always 0 (Success)
  */
 
-void _puts(char *str)
+int _strlen(char *s)
 {
 int i;
 i = 0;
 while (*s)
 {
-_putchar(s)
 s++;
+i++;
 }
-_putchar('\n')
+return (i);
 }
