@@ -1,19 +1,18 @@
 #include "main.h"
 /**
- * swap_int - check the code
- * @a: - input of function
- * @b: - input of function
+ * _strlen - check the code
+ * @s: - input of function
+ * Return: Always 0 (Success)
  */
 
 int _strlen(char *s)
 {
-  int i;
-  char t;
-  i = 0;
-  t = *s;
-  while (t[i])
-    {
-      i++;
-    }
-  return (i);
+int i;
+i = 0;
+while (*s)
+{
+*s++;
+i++;
+}
+return (i);
 }
