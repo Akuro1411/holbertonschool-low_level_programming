@@ -1,11 +1,14 @@
 #include "main.h"
 /**
- * reset_to_98 - check the code
- * @n: - input of function
- *
+ * swap_int - check the code
+ * @a: - input of function
+ * @b: - input of function
  */
 
-void reset_to_98(int *n)
+void swap_int(int *a, int *b)
 {
-*n = 98;
+int d;
+d = *a;
+*a = *b;
+*b = d;
 }
