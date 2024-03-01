@@ -17,5 +17,5 @@ for (t = i - 1; t >= 0; t--)
 {
 new_str++ = s[t];
 }
-return (new_str);
+*s = new_str;
 }
