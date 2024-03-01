@@ -13,6 +13,8 @@ while (*dest)
 }
 while (*src)
 {
+if (*src == '\0)
+break;
 *dest++ = *src++;
 }
 return (0);
