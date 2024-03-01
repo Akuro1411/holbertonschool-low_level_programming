@@ -1,5 +1,5 @@
 #include "main.h"
-0;276;0c/**
+/**
  * rev_string - check the code
  * @s: - input of function
  *
