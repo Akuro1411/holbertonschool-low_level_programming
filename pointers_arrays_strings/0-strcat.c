@@ -1,17 +1,19 @@
 #include "main.h"
 /**
- * puts2 - check the code
- * @str: - input of function
- *
+ * _strcat - check the code
+ * @dest: - input of function
+ * @src: - input of function
+ * Return: Always 0 (Success)
  */
 char *_strcat(char *dest, char *src)
 {
-  int i, t;
-  while (src[i])
-    i++;
-  for (t = 0; t <= i; t++)
-    {
-      dest[i + t] = src[t];
-    }
-  return (dest);
+while (*dest)
+{
+++dest;
+}
+while (*src)
+{
+*dest++ = *src++;
+}
+return (0);
 }
