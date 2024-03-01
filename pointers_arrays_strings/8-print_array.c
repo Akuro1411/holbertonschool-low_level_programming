@@ -15,4 +15,5 @@ if (t == n - 1)
 break;
 printf(", ");
 }
+printf("\n");
 }
