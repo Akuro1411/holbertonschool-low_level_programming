@@ -14,13 +14,13 @@ i++;
 }
 if (i % 2 == 1)
 {
-a = (i - 1) / 2;
+a = (i + 1) / 2;
 }
 else
 {
 a = i / 2;
 }
-for (t = a; t < i; t++)
+for (t = a; t <  i; t++)
 {
 _putchar(str[t]);
 }
