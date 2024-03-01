@@ -12,7 +12,15 @@ while (str[i])
 {
 i++;
 }
-for (t = i / 2; t < i; t++)
+if (i % 2 == 1)
+{
+t = (i - 1) / 2
+}
+else
+{
+t = i / 2
+}
+for (t; t < i; t++)
 {
 _putchar(str[t]);
 }
