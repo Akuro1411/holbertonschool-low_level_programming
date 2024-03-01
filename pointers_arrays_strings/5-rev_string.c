@@ -4,7 +4,7 @@
  * @s: - input of function
  *
  */
-void rev_string(char *s);
+void rev_string(char *s)
 {
 int i, t;
 char new_str;
@@ -17,5 +17,5 @@ for (t = i - 1; t >= 0; t--)
 {
 new_str++ = s[t];
 }
-return new_str++;
+return (new_str);
 }
