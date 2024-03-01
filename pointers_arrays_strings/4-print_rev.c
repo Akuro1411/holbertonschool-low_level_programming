@@ -5,20 +5,13 @@
  * Return: Always 0 (Success)
  */
 
-void print_rev(char *s)
+void _puts(char *str)
 {
-    int i, t;
-    i = 0;
-    while (s[i])
-    {
-        i++;
-    }
-
-    for (t = i - 1; t >= 0; t--)
-    {
-
-        _putchar(s[t]);
-    }
-     _putchar('\n');
+while (*str)
+{
+_putchar(*str);
+str++;
+}
+_putchar('\n');
 }
 
