@@ -17,6 +17,6 @@ if(n > 0)
 	{
 		dest[a + b] = src[b];
 	}
-	return (dest);
 }
+return (dest);
 }
