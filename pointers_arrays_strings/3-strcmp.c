@@ -18,6 +18,6 @@ if (i > j)
 return (-13);
 else if (i < j)
 return (13);
-else 
+else
 return (0);
 }
