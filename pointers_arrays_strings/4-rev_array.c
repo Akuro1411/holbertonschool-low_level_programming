@@ -1,5 +1,5 @@
 #include "main.h"
-0;276;0c/**
+/**
  * reverse_array - check the code
  * @a: - input of function
  * @n: - input of function
