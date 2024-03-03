@@ -1,5 +1,5 @@
 #include "main.h"
-11;rgb:2b2b/2b2b/2b2b/**
+/**
  * _atoi - check the code
  * @s: - input of function
  * Return: last value (Success)
