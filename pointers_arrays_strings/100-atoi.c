@@ -6,8 +6,7 @@
  */
 int _atoi(char *s)
 {
-  int i, j, t = 0, negative = 0, positive = 0;
-  int a;
+  int i, t = 0, negative = 0, positive = 0;
   while(s[i])
   { if (s[i] == '-')
     {
