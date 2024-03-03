@@ -1,21 +1,26 @@
 #include "main.h"
 /**
  * leet - check the code
- * @a: - input of function
+ * @list: - input of function
  * Return: returning of result value and success
  */
-char *leet(char *a)
+
+char *leet(char *list)
 {
-int i, j;
-i = 0;
-while (a[i])
+char lower_letters[] = "aeotl";
+char upper_letters[] = "AEOTL";
+char encode[] = "43071";
+int i = 0, j;
+while (list[i])
+{
+for (j = 0 ; j < 5; j++)
+{
+if (list[i] == lower_letters[j] || list[i] == upper_letters[j])
+{
+list[i] = encode[j];
+}
+}
 i++;
-for (j = 0; j < i; j++)
-{
-if (a[j] >= 'a' && a[j] <= 'z')
-{
-a[j] = a[j] - 32;
 }
-}
-return (a);
+return (list);
 }
