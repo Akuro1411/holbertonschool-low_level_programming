@@ -1,5 +1,5 @@
 #include "main.h"
-11;rgb:2b2b/2b2b/2b2b/**
+/**
  * cap_string - check the code
  * @a: - input of function
  * Return: returning of result value and success
