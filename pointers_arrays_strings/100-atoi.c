@@ -1,5 +1,5 @@
 #include "main.h"
-/**
+11;rgb:2b2b/2b2b/2b2b/**
  * _atoi - check the code
  * @s: - input of function
  * Return: last value (Success)
@@ -7,8 +7,8 @@
 
 int _atoi(char *s)
 {
-  int res = 0, negative = 0;
-  for (int i = 0; s[i] != '\0'; ++i)
+  int i, res = 0, negative = 0;
+  for (i = 0; s[i] != '\0'; ++i)
   {  
     if (s[i] == '-')
     {
