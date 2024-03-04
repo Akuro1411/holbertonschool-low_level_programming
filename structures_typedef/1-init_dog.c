@@ -1,4 +1,4 @@
-#include "dog.h"
+
 /**
  * main - check the code
  *
