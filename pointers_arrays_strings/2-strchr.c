@@ -1,19 +1,22 @@
 #include "main.h"
 /**
- * _memcpy - checks the code
- * @dest: - input of function
- * @src: - input of function
- * @n: - input of function
+ * _strchr - checks the code
+ * @s: - input of function
+ * @c: - input of function
  * Return: the end value of code
  */
-
-char *_memcpy(char *dest, char *src, unsigned int n)
+char *_strchr(char *s, char c)
 {
-int i, t;
-t = n;
-for (i = 0; i < t; i++)
-{
-dest[i] = src[i];
-}
-return (dest);
+	while (*s)
+	{
+		if (*s == c)
+		{
+			return (s);
+	}
+		else
+		s++;
+	}
+	if (c == '\0')
+	return (0);
+	return (s);
 }
