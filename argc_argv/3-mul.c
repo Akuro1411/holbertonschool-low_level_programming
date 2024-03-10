@@ -9,11 +9,11 @@
  */
 int main(int argc, char *argv[])
 {
-	char error = "ERROR";
+	char error[] = "ERROR";
 	int sum;
 	if (argc < 3)
 	{
-		printf("%c", error);
+		printf("%s", error);
 		return (1);
 	}
 	else
