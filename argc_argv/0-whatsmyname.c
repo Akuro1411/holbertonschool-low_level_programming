@@ -1,3 +1,5 @@
+#include <stdlib.h>
+#include <stdio.h>
 #include "main.h"
 /**
  * _puts_recursion - check the code
@@ -6,7 +8,7 @@
  */
 int main(int argc, char* argv[])
 {
-	_putchar(argv[0]);
+	printf("%s", argv[0]);
 	_putchar('\n');
 	return (0);
 }
