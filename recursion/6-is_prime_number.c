@@ -22,7 +22,7 @@ int find_prime(int n, int i, int last)
 	if ((n % i == 0 && i <= last) || n < 0 || n == 1)
 		return (0);
 	else if (n % i != 0 && i <= last)
-		return (helper_prime(n, i + 1, last));
+		return (find_prime(n, i + 1, last));
 	else
 		return (1);
 }
