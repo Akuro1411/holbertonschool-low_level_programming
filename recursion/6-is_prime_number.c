@@ -4,6 +4,8 @@
  * @n: number for input
  * Return: 0
  */
+int find_prime(int n, int i, int last);
+
 int is_prime_number(int n)
 {
 	return (find_prime(n, 2, n / 2));
