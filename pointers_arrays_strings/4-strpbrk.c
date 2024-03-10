@@ -6,17 +6,23 @@
  * @c: - input of function
  * Return: the end value of code
  */
-char *_strchr(char *s, char c)
-{
-	while (*s)
-	{
-		if (*s != c)
-			s++;
-		else
-			return (s);
-	}
-	if (c == '\0')
-		return (s);
 
-	return (NULL);
+char *_strpbrk(char *s, char *accept)
+{
+  int i;
+  while(*s)
+  { 
+	  i = 0;
+    while(accept[i])
+    {
+      if (*s == accept[i])
+      {
+        return s;
+      }
+      else
+      i++;
+    }
+    s++;
+  }
+  return 0;
 }
