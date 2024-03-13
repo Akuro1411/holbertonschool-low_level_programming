@@ -24,10 +24,7 @@ char *_strdup(char *str)
   {
     length++;
   }
-  if (length == 0)
-  {
-	  return NULL;
-  }
+
   arr = malloc(length * sizeof(char));
   for (i = 0; i < length; i++)
   {
