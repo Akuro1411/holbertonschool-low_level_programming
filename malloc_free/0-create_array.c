@@ -21,7 +21,7 @@ char *create_array(unsigned int size, char c)
 	{
 		return (0);
 	}
-	while (j < 98)
+	while (j < size)
 	{
 		arr[j] = c;
 		j++;
