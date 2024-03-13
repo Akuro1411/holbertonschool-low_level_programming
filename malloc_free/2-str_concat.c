@@ -1,12 +1,13 @@
 #include "main.h"
 #include <stdlib.h>
 #include <stddef.h>
+
 /**
- * create_array - Creates array with given size
- * @size: - size of array
- * @c: - character of every element
+ * _strdup - copy and return input str
+ * @str: - entered string
  * Return: Every element of array
  */
+
 char *str_concat(char *s1, char *s2)
 {
   int i = 0, j = 0, t, z;
@@ -15,7 +16,7 @@ char *str_concat(char *s1, char *s2)
     i++;
   while (s2[j])
     j++;
-  arr = malloc((i + j + 2) * sizeof(char));
+  arr = malloc((i + j + 3) * sizeof(char));
   for (t = 0; s1[t] != '\0'; t++)
   {
     arr[t] = s1[t];
