@@ -18,12 +18,16 @@ char *_strdup(char *str)
   {
     return NULL;
   }
+
   
   while (str[length])
   {
     length++;
   }
-  
+  if (length == 0)
+  {
+	  return NULL;
+  }
   arr = malloc(length * sizeof(char));
   for (i = 0; i < length; i++)
   {
