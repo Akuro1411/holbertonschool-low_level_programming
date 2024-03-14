@@ -12,7 +12,6 @@ char *str_concat(char *s1, char *s2)
 {
   int i = 0, j = 0, t, z;
   char *arr;
-  char empty_string[1] = "";
   while (s1[i])
     i++;
   while (s2[j])
