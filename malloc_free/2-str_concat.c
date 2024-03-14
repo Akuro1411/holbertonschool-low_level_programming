@@ -21,7 +21,7 @@ if (s2 != NULL)
 while (s2[j])
 j++;;
 
-arr = malloc((i + j + 2) * sizeof(char));
+arr = malloc((i + j + 1) * sizeof(char));
 
 if (arr == NULL)
 return 0;
