@@ -3,21 +3,24 @@
 #include <stddef.h>
 
 /**
- * _strdup - copy and return input str
- * @str: - entered string
+ * alloc_grid - copy and return input str
+ * @width: - number of elements in each row
+ * @height: -  number of rows
  * Return: Every element of array
  */
+
 int **alloc_grid(int width, int height)
 {
 	int i, j;
 	int **arr;
-	if (width <=0 || height <= 0)
-	return NULL;
+
+	if (width <= 0 || height <= 0)
+	return (NULL);
 
 	arr = malloc((height) * sizeof(int *));
 
 	if (arr == NULL)
-		return NULL;
+		return (NULL);
 	for (i = 0; i < height; i++)
 	{
 		arr[i] = malloc((width) * sizeof(int));
@@ -26,7 +29,7 @@ int **alloc_grid(int width, int height)
 			for (; i >= 0; i--)
 				free(arr[i]);
 			free(arr);
-			return NULL;
+			return (NULL);
 		}
 	}
 	for (i = 0; i < height; i++)
@@ -36,5 +39,5 @@ int **alloc_grid(int width, int height)
 			arr[i][j] = 0;
 		}
 	}
-	return arr;
+	return (arr);
 }
