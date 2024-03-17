@@ -6,51 +6,36 @@
  * @b: - the size of memory
  * Return: returns the pointer
  */
-
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-  unsigned int i = 0, j, t = 0;
-  char *arr, *empty;
-  empty = "";
-  if (s1 == NULL)
-  {
-    s1 = empty;
-  }
-  if (s2 == NULL)
-  {
-    s2 = empty;
-  }
-  while (s1[i])
-  {
-    i++;
-  }
+	unsigned int l1, i, e;
+	char *a;
 
-  while (s2[t])
-  {
-    t++;
-  }
-  arr = malloc((i + n) * sizeof(char));
-  if (arr == NULL)
-  {
-    return NULL;
-  }
+	if (s1 == NULL)
+		s1 = "";
 
-  for (j = 0; j < i; j++)
-  {
-    arr[j] = s1[j];
-  }
+	if (s2 == NULL)
+		s2 = "";
+	l1 = 0;
+	while (s1[l1])
+		l1++;
 
-  if (n >= t)
-    for (j = 0; j < t; j++)
-    {
-      arr[i + j] = s2[j];
-    }
-  else
-  {
-    for (j = 0; j < n; j++)
-    {
-      arr[i + j] = s2[j];
-    }
-  }
-return arr;
+	a = malloc(sizeof(*a) * l1 + n + 1);
+
+	if (a == NULL)
+		return (NULL);
+
+	for (i = 0, e = 0; i < (l1 + n); i++)
+	{
+		if (i < l1)
+		{
+			a[i] = s1[i];
+		}
+		else
+		{
+			a[i] = s2[e++];
+		}
+	}
+	a[i] = '\0';
+	return (a);
 }
