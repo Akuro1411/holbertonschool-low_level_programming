@@ -30,7 +30,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
   {
     arr[i + j] = s2[j];
   };
-
+  exit(0);
   return arr;
   
 }
