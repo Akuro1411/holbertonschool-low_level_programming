@@ -1,12 +1,15 @@
-
+#ifndef DOG_H
+#define DOG_H
 /**
- * main - check the code
- *
- * Return: Always 0.
+ * struct dog - check the code
+ * @name: - first member
+ * @age: - second member
+ * @owner: - third member
+ * Description: Longer description
  */
-struct dog
+typedef struct dog
 {
-  char *name;
-  float age;
-  char *owner;
+	char *name;
+	float age;
+	char *owner;
 };
