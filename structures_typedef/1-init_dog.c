@@ -1,15 +1,19 @@
-#ifndef DOG_H
-#define DOG_H
+#include "dog.h"
+#include <stdlib.h>
+
 /**
- * struct dog - check the code
- * @name: - first member
- * @age: - second member
- * @owner: - third member
- * Description: Longer description
+ * init_dog - Initialize a file.
+ * @d: input of dog.
+ * @name: The name of  dog.
+ * @age: The age of dog.
+ * @owner: The owner of  dog.
  */
-typedef struct dog
+void init_dog(struct dog *d, char *name, float age, char *owner)
 {
-	char *name;
-	float age;
-	char *owner;
-};
+	if (d != NULL)
+	{
+		d->name = name;
+		d->age = age;
+		d->owner = owner;
+	}
+}
