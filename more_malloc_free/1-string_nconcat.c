@@ -11,10 +11,11 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
   unsigned int i = 0, j = 0;
   char *arr;
+  if (s1 != NULL)
   while (s1[i])
   {
     i++;
-  }
+  };
   arr = malloc((i + n + 1) * sizeof(char));
   if (arr == NULL)
   {
@@ -24,11 +25,11 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
   {
     arr[j] = s1[j];
   }
-
+  if (s2 != NULL)
   for (j = 0; j < n; j++)
   {
     arr[i + j] = s2[j];
-  }
+  };
 
   return arr;
   
