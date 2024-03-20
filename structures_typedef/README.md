@@ -1,1 +1,0 @@
-Hello, in this directory we work with structures in c
