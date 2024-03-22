@@ -11,6 +11,7 @@ void free_dog(dog_t *d)
 		return ;
 	if (d->owner == NULL)
 	{
+		free(d->name);
 		return;
 	}
 	free(d);
