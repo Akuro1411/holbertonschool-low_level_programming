@@ -6,7 +6,7 @@
  * @d: - pointer for new variable
  */
 void print_dog(struct dog *d)
-{	char *nil;
+{	char nil;
 
 	nil = "(nil)";
 	if (d == NULL)
