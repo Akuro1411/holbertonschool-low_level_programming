@@ -1,5 +1,6 @@
 #include "dog.h"
 #include <stddef.h>
+#include <stdlib.h>
 /**
  * init_dog - sends the value for each element
  * @d: - pointer for new variable
@@ -14,6 +15,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 	if (user == NULL)
 		return (NULL);
 	user->name = name;
+	user->age = age;
 	user->owner = owner;
-	return user
+	return user;
 }
