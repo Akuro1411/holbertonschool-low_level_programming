@@ -6,14 +6,14 @@
  * @d: - pointer for new variable
  */
 void print_dog(struct dog *d)
-{	
+{
 	if (d == NULL)
 		return;
 	if (d->name == NULL ||  d->owner == NULL)
 	{
 		printf("Name: (nil)\n");
-                printf("Age: %f\n", d->age);
-                printf("Owner: (nil)\n");
+		printf("Age: %f\n", d->age);
+		printf("Owner: (nil)\n");
 	}
 	else
 	{
