@@ -8,6 +8,20 @@
  * @age: - age of value
  * @owner: - owner of value
  */
+char *_strcpy(char *dest, char *src)
+{
+	int i;
+
+	i = 0;
+	while (*(src + i) != '\0')
+	{
+		*(dest + i) = *(src + i);
+		i++;
+	}
+	*(dest + i) = '\0';
+	return (dest);
+}
+
 dog_t *new_dog(char *name, float age, char *owner)
 {
         dog_t *user;
@@ -15,6 +29,8 @@ dog_t *new_dog(char *name, float age, char *owner)
         if (user == NULL)
         {
                 free(user);
+		free(name);
+		free(owner);
                 return (NULL);
         }
         if (name == NULL)
@@ -32,5 +48,7 @@ dog_t *new_dog(char *name, float age, char *owner)
         user->name = name;
         user->age = age;
         user->owner = owner;
+	new_dog->name = _strcpy(new_dog->name, name);
+	new_dog->name = _strcpy(new_dog->owner, owner);
         return user;
 }
