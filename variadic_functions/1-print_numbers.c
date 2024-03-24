@@ -2,10 +2,9 @@
 #include <stdio.h>
 #include "variadic_functions.h"
 /**
- * sum_them_all - returns the sum of elements
- * @n: - number of elements in array
- *
- * Return: the sum
+ * print_numbers - prints the elements
+ * @separator: - separator of numbers
+ * @n: - number of elements
  */
 
 void print_numbers(const char *separator, const unsigned int n, ...)
