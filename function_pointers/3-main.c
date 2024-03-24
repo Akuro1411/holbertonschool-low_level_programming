@@ -3,7 +3,8 @@
 #include "3-calc.h"
 /**
  * main - check the code
- *
+ * @argc: - number of arguments
+ * @argv: - list of arguments
  * Return: Always 0.
  */
 int main(int argc, char **argv)
