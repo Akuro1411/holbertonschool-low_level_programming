@@ -1,3 +1,4 @@
+#include <stdarg.h>
 #include "variadic_functions.h"
 /**
  * main - check the code
@@ -16,5 +17,5 @@ int sum_them_all(const unsigned int n, ...)
 		sum += t;
 	}
 	va_end(t);
-	return sum
+	return sum;
 }
