@@ -16,6 +16,7 @@ int (*get_op_func(char *s))(int, int)
     {
 	    if ((ops + i)->op == s)
 		    return ((ops + i)->f);
+	    i++
     }
     printf("Error\n");
     exit(99);
