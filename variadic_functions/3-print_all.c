@@ -1,79 +1,49 @@
-#include <stdlib.h>
-#include <stdio.h>
-#include <stdarg.h>
 #include "variadic_functions.h"
-/**
- * print_int - prints an int
- * @args: the list of args
- */
-void print_int(va_list args)
-{
-	printf("%d", va_arg(args, int));
-}
-/**
- * print_char - prints a char
- * @args: the list of args
- */
-void print_char(va_list args)
-{
-	printf("%c", va_arg(args, int));
-}
-/**
- * print_string - prints a string
- * @args: the list of args
- */
-void print_string(va_list args)
-{
-	char *z = va_arg(args, char *);
 
-	if (!z)
-	{
-		printf("(nil)");
-		return;
-	}
-	printf("%s", z);
-}
 /**
- * print_float - prints floats
- * @args: the list of args
- */
-void print_float(va_list args)
-{
-	printf("%f", va_arg(args, double));
-}
-/**
- * print_all - prints all
- * @format: formats of arg
+ * print_all - prints all the arguments that are passed to it in any format
+ * @format: format of the argument
  */
 void print_all(const char * const format, ...)
 {
-	types_t types[] = {
-	{'c', print_char},
-	{'i', print_int},
-	{'f', print_float},
-	{'s', print_string},
-	{'\0', NULL}
-	};
+	unsigned int i, j, sep = 0;
+	char *str;
+	char c_args[] = "cifs";
 	va_list args;
-	char *sep1 = "", *sep2 = ", ";
-	int count1 = 0, count2 = 0;
 
 	va_start(args, format);
-	while (format !=  NULL && format[count1] != '\0')
+	i = 0;
+	while (format && format[i])
 	{
-		count2 = 0;
-		while (types[count2].z != '\0')
+		j = 0;
+		while (c_args[j])
 		{
-			if (format[count1] == types[count2].z)
+			if (format[i] == c_args[j] && sep)
 			{
-				printf("%s", sep1);
-				types[count2].f(args);
-				sep1 = sep2;
-			}
-			count2++;
+				printf(", ");
+				break;
+			} j++;
 		}
-		count1++;
-	}
-	printf("\n");
-	va_end(args);
+		switch (format[i])
+		{
+			case 'c':
+				printf("%c", va_arg(args, int)), sep = 1;
+				break;
+			case 'i':
+				printf("%d", va_arg(args, int)), sep = 1;
+				break;
+			case 'f':
+				printf("%f", va_arg(args, double)), sep = 1;
+				break;
+			case 's':
+				str = va_arg(args, char *), sep = 1;
+				if (!str)
+				{
+					printf("(nil)");
+					break;
+				}
+				printf("%s", str);
+				break;
+		} i++;
+	} va_end(args), printf("\n");
 }
