@@ -1,5 +1,5 @@
 #include "variadic_functions.h"
-
+#include <stdarg.h>
 /**
  * print_char - Prints a char
  * @ap: Argument pointer
