@@ -22,31 +22,43 @@ char *_strcpy(char *dest, char *src)
 	return (dest);
 }
 
+int _strlen(char *s)
+{
+	int i;
+	i = 0;
+	while (*s)
+	{
+		s++;
+		i++;
+	}
+	return (i);
+}
+
 dog_t *new_dog(char *name, float age, char *owner)
 {
-        dog_t *user;
-        user = malloc(sizeof(dog_t));
-        if (user == NULL)
-        {
-                free(user);
+	dog_t *user;
+	int len_name, len_owner;
+	
+	user = malloc(sizeof(dog_t));
+	if (user == NULL)
+		return (NULL);
+	len_name = _strlen(name);
+	len_owner = _strlen(owner);
+	user->name = malloc(sizeof(char) * (len_name + 1));
+	if (user->name == NULL)
+	{
+		free(user);
+		return (NULL);
+	}
+	user->name = _strcpy(user->name, name);
+	user->age = age;
+	user->owner = malloc(sizeof(char) * (len_owner + 1));
+	if (user->owner == NULL)
+	{
 		free(name);
-		free(owner);
-                return (NULL);
-        }
-        if (name == NULL)
-        {
-                free(user);
-                free(owner);
-                return (NULL);
-        }
-        if (owner == NULL)
-        {
-                free(user);
-                free(name);
-                return (NULL);
-        }
-        user->age = age;
-	user->name = name;
-	user->owner = owner;
-        return user;
+		free(user);
+		return (NULL);
+	}
+	user->owner = _strcpy(user->owner, owner);
+	return (user);
 }
