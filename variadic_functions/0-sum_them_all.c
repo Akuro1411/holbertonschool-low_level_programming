@@ -1,17 +1,19 @@
 #include <stdarg.h>
 #include "variadic_functions.h"
 /**
- * main - check the code
+ * sum_them_all - returns the sum of elements
+ * @n: - number of elements in array
  *
- * Return: Always 0.
+ * Return: the sum
  */
 
 int sum_them_all(const unsigned int n, ...)
 {
 	unsigned int i, sum = 0;
 	va_list t;
+
 	if (n == 0)
-		return 0;
+		return (0);
 
 	va_start(t, n);
 	for (i = 0; i < n; i++)
@@ -19,5 +21,5 @@ int sum_them_all(const unsigned int n, ...)
 		sum += va_arg(t, int);
 	}
 	va_end(t);
-	return sum;
+	return (sum);
 }
