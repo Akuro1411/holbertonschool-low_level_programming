@@ -2,11 +2,10 @@
 #include <stddef.h>
 #include <stdlib.h>
 /**
- * init_dog - sends the value for each element
- * @d: - pointer for new variable
- * @name: - name of value
- * @age: - age of value
- * @owner: - owner of value
+ * _strcpy - copies the string
+ * @dest: - pointer for the first string
+ * @src: - pointer for second string
+ * Return: - returns the new string
  */
 char *_strcpy(char *dest, char *src)
 {
@@ -22,9 +21,16 @@ char *_strcpy(char *dest, char *src)
 	return (dest);
 }
 
+/**
+ * _strlen - check the code
+ * @s: - pointer for given string
+ * Return: length of string`
+ */
+
 int _strlen(char *s)
 {
 	int i;
+
 	i = 0;
 	while (*s)
 	{
@@ -34,11 +40,19 @@ int _strlen(char *s)
 	return (i);
 }
 
+/**
+ * new_dog - sends the value for each element
+ * @name: - name of value
+ * @age: - age of value
+ * @owner: - owner of value
+ * Return: - returns the name, age and owner
+ */
+
 dog_t *new_dog(char *name, float age, char *owner)
 {
 	dog_t *user;
 	int len_name, len_owner;
-	
+
 	user = malloc(sizeof(dog_t));
 	if (user == NULL)
 		return (NULL);
