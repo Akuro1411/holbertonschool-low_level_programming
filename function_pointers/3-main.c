@@ -6,7 +6,7 @@
  *
  * Return: Always 0.
  */
-int main(char **argv, int argc)
+int main(int argc, char **argv)
 {
 	int result;
 
