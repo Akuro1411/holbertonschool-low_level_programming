@@ -14,15 +14,14 @@ list_t *add_node_end(list_t **head, const char *str)
 	int i = 0;
 	list_t *new_node = *head;
 
-	new_list->str = new_string;
-	while (new_node->next != NULL)
-		new_node = new_node->next;
-	new_list->next = new_node;
 	if (new_list == NULL)
 	{
 		return (0);
 	}
-
+	new_list->str = new_string;
+        while (new_node->next != NULL)
+                new_node = new_node->next;
+        new_node->next = new_list;
 
 	while (str[i])
 	{
