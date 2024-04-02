@@ -1,9 +1,9 @@
 #include "lists.h"
 #include <stdio.h>
 /**
- * main - check the code
- *
- * Return: Always 0.
+ * print_list - prints the nodes and returns the count
+ * @h: - input for given structure
+ * Return: - Returns the length of list
  */
 size_t print_list(const list_t *h)
 {
@@ -11,7 +11,7 @@ size_t print_list(const list_t *h)
 
 	if (h == NULL)
 	{
-		return 0;
+		return (0);
 	}
 	if (h->str == NULL)
 	{
@@ -26,5 +26,6 @@ size_t print_list(const list_t *h)
 	h = h->next;
 	i++;
 	}
-	return i;
+	return (i);
+
 }
