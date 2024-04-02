@@ -1,5 +1,6 @@
 #include "lists.h"
 #include <stdio.h>
+#include <string.h>
 /**
  * list_len - prints the nodes and returns the count
  * @h: - input for given structure
