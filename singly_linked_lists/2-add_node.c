@@ -9,6 +9,10 @@
 list_t *add_node(list_t **head, const char *str)
 {
 	list_t *new_list = malloc(sizeof(list_t));
+	if (new_list == NULL)
+	{
+		return (0);
+	}
 	char *new_string = strdup(str);
 	int i = 0;
 
