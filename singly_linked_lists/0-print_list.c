@@ -1,5 +1,4 @@
 #include "lists.h"
-#include <stddef.h>
 #include <stdio.h>
 /**
  * main - check the code
