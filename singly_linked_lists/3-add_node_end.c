@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <string.h>
 /**
- * add_node - adds new node at the beginning of the list
+ * add_node_end - adds new node at the end of the list
  * @head: - input for given structure
  * @str: - new added string
  * Return: - Returns the new  list
