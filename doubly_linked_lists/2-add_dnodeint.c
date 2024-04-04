@@ -1,4 +1,5 @@
 #include "lists.h"
+#include <stdlib.h>
 /**
  * dlistint_len - prints the count of elements in list
  * @h: - input for given structure
