@@ -1,44 +1,40 @@
 #include "lists.h"
-#include <stdlib.h>
 /**
- * sum_dlistint - calculates the sum of elements in linked list
- * @head: - input for given structure
- * Return: - return the sum
+ * delete_dnodeint_at_index - deletes node at the given position.
+ * @head: double pointer to list.
+ * @index: index of inserting position.
+ * Return: 1 if it succeeded, -1 if it failed
  */
 int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 {
-  unsigned int i = 0;
-  dlistint_t *node = *head;
-  
-  if (*head == NULL)
-  {
-    return -1;
-  }
+	unsigned int i = 0;
+	dlistint_t *bfr_node = *head, *tmp_node = *head;
 
-  if (index == 0)
-  {
-    if ((*head)->next == NULL)
-    {
-      *head = NULL;
-      return 1;
-    }
-    (*head)->next->prev = NULL;
-    *head = (*head)->next;
-  }
-  else
-  {
-    while(i < index  && node)
-    {
-      node = node->next;
-      i++;
-    }
-    if (i < index)
-    {
-      return -1;
-    }
-    node->prev->next = node->next;
-    node->next->prev = node->prev;
-
-  }
-  return 1;
+	if (index == 0 && *head)
+	{
+		if ((*head)->next)
+		{
+			*head = (*head)->next;
+			(*head)->prev = NULL;
+			free(tmp_node);
+		}
+		else
+			*head = NULL;
+		return (1);
+	}
+	while (i < index - 1 && bfr_node)
+	{
+		bfr_node = bfr_node->next;
+		i++;
+	}
+	if (bfr_node)
+	{
+		tmp_node = bfr_node->next;
+		if (tmp_node->next)
+			tmp_node->next->prev = bfr_node;
+		bfr_node->next = tmp_node->next;
+		free(tmp_node);
+		return (1);
+	}
+	return (-1);
 }
