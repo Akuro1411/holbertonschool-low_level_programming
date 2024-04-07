@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stddef.h>
 /**
  * read_textfile - reads a text file and prints it to standard output
  * @filename: relative or absolute path of the file
